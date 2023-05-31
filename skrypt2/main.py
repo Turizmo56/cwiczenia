@@ -11,5 +11,14 @@ def potegi(podstawa, wykladnik):
 
 
 if __name__ == "__potegi__":
-    potegi(podstawa,wykladnik)
-    
+    potegi(podstawa, wykladnik)
+
+
+def palindron(napis):
+    n = len(napis)
+    for i in range(len(napis) // 2):
+        if napis[i] != napis[n - 1 - 1]:
+            return False
+        return True
+    if __name == "__palindron__":
+        palindron(napis)
